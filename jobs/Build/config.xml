@@ -1,0 +1,46 @@
+<?xml version='1.1' encoding='UTF-8'?>
+<project>
+  <actions/>
+  <description></description>
+  <keepDependencies>false</keepDependencies>
+  <properties>
+    <hudson.model.ParametersDefinitionProperty>
+      <parameterDefinitions>
+        <com.syhuang.hudson.plugins.listgitbranchesparameter.ListGitBranchesParameterDefinition plugin="list-git-branches-parameter@0.0.7">
+          <name>BRANCH</name>
+          <uuid>4b085b3f-4b54-4e8e-95d5-9cac253a0d18</uuid>
+          <remoteURL>https://gitlab.cast.com.br/datasus/hemovida/hemovida-web.git</remoteURL>
+          <credentialsId>1bf809e4-0054-4d97-8a33-f8bdcd5cab43</credentialsId>
+          <defaultValue>origin/master</defaultValue>
+          <type>PT_BRANCH_TAG</type>
+          <tagFilter>.*</tagFilter>
+          <branchFilter>.*</branchFilter>
+          <sortMode>NONE</sortMode>
+          <selectedValue>NONE</selectedValue>
+          <quickFilterEnabled>true</quickFilterEnabled>
+          <listSize>5</listSize>
+        </com.syhuang.hudson.plugins.listgitbranchesparameter.ListGitBranchesParameterDefinition>
+      </parameterDefinitions>
+    </hudson.model.ParametersDefinitionProperty>
+  </properties>
+  <scm class="hudson.scm.NullSCM"/>
+  <canRoam>true</canRoam>
+  <disabled>false</disabled>
+  <blockBuildWhenDownstreamBuilding>false</blockBuildWhenDownstreamBuilding>
+  <blockBuildWhenUpstreamBuilding>false</blockBuildWhenUpstreamBuilding>
+  <triggers/>
+  <concurrentBuild>false</concurrentBuild>
+  <builders>
+    <hudson.tasks.Shell>
+      <command>echo &quot;Teste do ambiente&quot; ${BRANCH} | sed -e &apos;s/origin\///g;s/[_/.]/-/g&apos;</command>
+    </hudson.tasks.Shell>
+    <org.jvnet.hudson.plugins.SSHBuilder plugin="ssh@2.6.1">
+      <siteName>hemovida@10.10.20.179:22</siteName>
+      <command>/var/www/html/gitbuild.sh `echo ${BRANCH} | sed -e &apos;s/origin\///g&apos;`</command>
+      <execEachLine>false</execEachLine>
+      <hideCommand>false</hideCommand>
+    </org.jvnet.hudson.plugins.SSHBuilder>
+  </builders>
+  <publishers/>
+  <buildWrappers/>
+</project>

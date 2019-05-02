@@ -1,0 +1,174 @@
+Started by user [8mha:////4FN88H8RrhTBzIF+lJAjMLBc7u8Svt/xokmPCiLj+FzmAAAAlx+LCAAAAAAAAP9b85aBtbiIQTGjNKU4P08vOT+vOD8nVc83PyU1x6OyILUoJzMv2y+/JJUBAhiZGBgqihhk0NSjKDWzXb3RdlLBUSYGJk8GtpzUvPSSDB8G5tKinBIGIZ+sxLJE/ZzEvHT94JKizLx0a6BxUmjGOUNodHsLgAzWEgZu/dLi1CL9xJTczDwAj6GcLcAAAAA=[0madmin
+Running as SYSTEM
+Building in workspace /var/jenkins_home/workspace/Automacao
+[WS-CLEANUP] Deleting project workspace...
+[WS-CLEANUP] Deferred wipeout is used...
+[WS-CLEANUP] Done
+using credential 1bf809e4-0054-4d97-8a33-f8bdcd5cab43
+Cloning the remote Git repository
+Cloning repository https://gitlab.cast.com.br/datasus/hemovida/hemovida-web-testes
+ > git init /var/jenkins_home/workspace/Automacao # timeout=10
+Fetching upstream changes from https://gitlab.cast.com.br/datasus/hemovida/hemovida-web-testes
+ > git --version # timeout=10
+using GIT_ASKPASS to set credentials 
+ > git fetch --tags --progress https://gitlab.cast.com.br/datasus/hemovida/hemovida-web-testes +refs/heads/*:refs/remotes/TESTE/*
+ > git config remote.TESTE.url https://gitlab.cast.com.br/datasus/hemovida/hemovida-web-testes # timeout=10
+ > git config --add remote.TESTE.fetch +refs/heads/*:refs/remotes/TESTE/* # timeout=10
+ > git config remote.TESTE.url https://gitlab.cast.com.br/datasus/hemovida/hemovida-web-testes # timeout=10
+Fetching upstream changes from https://gitlab.cast.com.br/datasus/hemovida/hemovida-web-testes
+using GIT_ASKPASS to set credentials 
+ > git fetch --tags --progress https://gitlab.cast.com.br/datasus/hemovida/hemovida-web-testes +refs/heads/*:refs/remotes/TESTE/*
+ > git rev-parse refs/remotes/TESTE/master^{commit} # timeout=10
+ > git rev-parse refs/remotes/TESTE/TESTE/master^{commit} # timeout=10
+Checking out Revision 2fd64091c6c00d400f12d689c39511f3d60d2670 (refs/remotes/TESTE/master)
+ > git config core.sparsecheckout # timeout=10
+ > git checkout -f 2fd64091c6c00d400f12d689c39511f3d60d2670
+Commit message: ""
+ > git rev-list --no-walk 2fd64091c6c00d400f12d689c39511f3d60d2670 # timeout=10
+Xvfb starting$ /usr/bin/Xvfb :0 -fbdir /var/jenkins_home/xvfb-110-..fbdir2388327999942359835
+[Automacao] $ /bin/sh -xe /tmp/jenkins8270950262166272633.sh
++ echo Teste do ambiente origin/release/2.11.0-rc-3
++ sed -e s/origin\///g;s/[_/.]/-/g
+Teste do ambiente release-2-11-0-rc-3
+[SSH] script:
+BRANCH="origin/release/2.11.0-rc-3"
+
+/var/www/html/gitbuild.sh `echo ${BRANCH} | sed -e 's/origin\///g'`
+
+[SSH] executing...
+Cloning into 'release-2-11-0-rc-3'...
+- Removendo diretórios legado
+- Baixando arquivos
+cp: não foi possível obter estado de 'Zend': Arquivo ou diretório inexistente
+- Copiando library Zend
+Ambiente montado em http://release-2-11-0-rc-3.hemovida.cast.com.br
+
+[SSH] completed
+[SSH] exit-status: 0
+
+Katalon Studio package has been downloaded already.
+Using Katalon Studio at /var/jenkins_home/.katalon/5.10.1/Katalon_Studio_Linux_64-5.10.1
+Execute [sh, -c, /var/jenkins_home/.katalon/5.10.1/Katalon_Studio_Linux_64-5.10.1/katalon -noSplash  -runMode=console   -noSplash -projectPath="$WORKSPACE/$TEST_SUITES.prj" -retry=0 -testSuitePath="Test Suites/$TEST_SUITES" -browserType="Chrome" -reportFolder="$WORKSPACE/Reports" -reportFileName="report" -executionProfile="${PROFILE}" -g_branch=`echo ${BRANCH} | sed -e 's/origin\///g;s/[_/.]/-/g'` ] in /tmp/katalon-2165052002578701710
+Delete folder: bin
+Delete folder: Libs
+Opening project file: /var/jenkins_home/workspace/Automacao/Hemovida.prj
+Request sent successfully.
+[EL Warning]: 2019-05-02 19:02:21.69--Ignoring attribute [lastRun] on class [TestSuiteEntity] as no Property was generated for it.
+Starting Groovy-Eclipse compiler resolver.  Specified compiler level: unspecified
+166 2.4.7.xx-201611170128-e46 = ACTIVE
+Parsing custom keywords...
+Generating global variables...
+Project 'Hemovida' opened
+
+--------------------------------------------------------------------------------
+Test Suites/Hemovida - Chrome - 20190502_190228..........................0/1(0%)
+--------------------------------------------------------------------------------
+
+Request sent successfully.
+2019-05-02 19:02:30.565 INFO  c.k.katalon.core.main.TestSuiteExecutor  - START Test Suites/Hemovida
+2019-05-02 19:02:30.652 INFO  c.k.katalon.core.main.TestSuiteExecutor  - hostName = root - b6d3bcbc89bc
+2019-05-02 19:02:30.652 INFO  c.k.katalon.core.main.TestSuiteExecutor  - os = Linux 64bit
+2019-05-02 19:02:30.653 INFO  c.k.katalon.core.main.TestSuiteExecutor  - hostAddress = 172.19.0.2
+2019-05-02 19:02:30.686 INFO  c.k.katalon.core.main.TestSuiteExecutor  - katalonVersion = 5.10.1.1
+2019-05-02 19:02:30.893 INFO  c.k.katalon.core.main.TestCaseExecutor   - --------------------
+2019-05-02 19:02:30.893 INFO  c.k.katalon.core.main.TestCaseExecutor   - START Test Cases/LoginTest
+2019-05-02 19:02:31.259 DEBUG testcase.LoginTest                       - 1: openBrowser("")
+2019-05-02 19:02:33.121 INFO  c.k.k.core.webui.driver.DriverFactory    - Starting 'Chrome' driver
+2019-05-02 19:02:33.165 INFO  c.k.k.core.webui.driver.DriverFactory    - Action delay is set to 0 seconds
+
+--------------------------------------------------------------------------------
+Test Suites/Hemovida - Chrome - 20190502_190228..........................0/1(0%)
+--------------------------------------------------------------------------------
+
+2019-05-02 19:02:51.505 INFO  c.k.k.core.webui.driver.DriverFactory    - sessionId = e692758dceb75eb4de7f625f3fe28e7e
+2019-05-02 19:02:51.620 INFO  c.k.k.core.webui.driver.DriverFactory    - browser = Chrome 74.0.3729.108
+2019-05-02 19:02:51.621 INFO  c.k.k.core.webui.driver.DriverFactory    - platform = Linux
+2019-05-02 19:02:51.625 INFO  c.k.k.core.webui.driver.DriverFactory    - seleniumVersion = 3.141.59
+2019-05-02 19:02:51.626 INFO  c.k.k.core.webui.driver.DriverFactory    - proxyInformation = ProxyInformation{proxyOption=NO_PROXY, proxyServerType=HTTP, password=, proxyServerAddress=, proxyServerPort=0}
+2019-05-02 19:02:51.627 DEBUG testcase.LoginTest                       - 2: navigateToUrl("http://" + branch + ".hemovida.cast.com.br/")
+2019-05-02 19:02:54.180 DEBUG testcase.LoginTest                       - 3: setText(findTestObject("Page_Hemovida/input__email"), "wilbert.joosen@saude.gov.br")
+
+--------------------------------------------------------------------------------
+Test Suites/Hemovida - Chrome - 20190502_190228..........................0/1(0%)
+--------------------------------------------------------------------------------
+
+
+--------------------------------------------------------------------------------
+Test Suites/Hemovida - Chrome - 20190502_190228..........................0/1(0%)
+--------------------------------------------------------------------------------
+
+2019-05-02 19:03:24.936 INFO  c.k.k.c.webui.common.WebUiCommonHelper   - Unable to find the element located by 'By.xpath: //input[@type = 'text' and @id = 'email' and @name = 'email']'. Please recheck the objects properties to make sure the desired element is located. 
+2019-05-02 19:03:25.219 ERROR c.k.k.core.keyword.internal.KeywordMain  - ❌ Unable to set text 'wilbert.joosen@saude.gov.br' of object 'Object Repository/Page_Hemovida/input__email' (Root cause: com.kms.katalon.core.webui.exception.WebElementNotFoundException: Web element with id: 'Object Repository/Page_Hemovida/input__email' located by 'By.xpath: //input[@type = 'text' and @id = 'email' and @name = 'email']' not found)
+2019-05-02 19:03:25.254 ERROR c.k.katalon.core.main.TestCaseExecutor   - ❌ setText(findTestObject("Page_Hemovida/input__email"), "wilbert.joosen@saude.gov.br") FAILED.
+Reason:
+com.kms.katalon.core.exception.StepFailedException: Unable to set text 'wilbert.joosen@saude.gov.br' of object 'Object Repository/Page_Hemovida/input__email' (Root cause: com.kms.katalon.core.webui.exception.WebElementNotFoundException: Web element with id: 'Object Repository/Page_Hemovida/input__email' located by 'By.xpath: //input[@type = 'text' and @id = 'email' and @name = 'email']' not found)
+	at com.kms.katalon.core.keyword.internal.KeywordMain.stepFailed(KeywordMain.groovy:36)
+	at com.kms.katalon.core.webui.keyword.internal.WebUIKeywordMain.stepFailed(WebUIKeywordMain.groovy:65)
+	at com.kms.katalon.core.webui.keyword.internal.WebUIKeywordMain.runKeyword(WebUIKeywordMain.groovy:27)
+	at com.kms.katalon.core.webui.keyword.builtin.SetTextKeyword.setText(SetTextKeyword.groovy:65)
+	at com.kms.katalon.core.webui.keyword.builtin.SetTextKeyword.execute(SetTextKeyword.groovy:37)
+	at com.kms.katalon.core.keyword.internal.KeywordExecutor.executeKeywordForPlatform(KeywordExecutor.groovy:53)
+	at com.kms.katalon.core.webui.keyword.WebUiBuiltInKeywords.setText(WebUiBuiltInKeywords.groovy:950)
+	at com.kms.katalon.core.webui.keyword.WebUiBuiltInKeywords$setText$1.call(Unknown Source)
+	at LoginTest.run(LoginTest:23)
+	at com.kms.katalon.core.main.ScriptEngine.run(ScriptEngine.java:194)
+	at com.kms.katalon.core.main.ScriptEngine.runScriptAsRawText(ScriptEngine.java:119)
+	at com.kms.katalon.core.main.TestCaseExecutor.runScript(TestCaseExecutor.java:328)
+	at com.kms.katalon.core.main.TestCaseExecutor.doExecute(TestCaseExecutor.java:319)
+	at com.kms.katalon.core.main.TestCaseExecutor.processExecutionPhase(TestCaseExecutor.java:298)
+	at com.kms.katalon.core.main.TestCaseExecutor.accessMainPhase(TestCaseExecutor.java:290)
+	at com.kms.katalon.core.main.TestCaseExecutor.execute(TestCaseExecutor.java:224)
+	at com.kms.katalon.core.main.TestSuiteExecutor.accessTestCaseMainPhase(TestSuiteExecutor.java:129)
+	at com.kms.katalon.core.main.TestSuiteExecutor.accessTestSuiteMainPhase(TestSuiteExecutor.java:112)
+	at com.kms.katalon.core.main.TestSuiteExecutor.execute(TestSuiteExecutor.java:81)
+	at com.kms.katalon.core.main.TestCaseMain.startTestSuite(TestCaseMain.java:149)
+	at com.kms.katalon.core.main.TestCaseMain$startTestSuite$0.call(Unknown Source)
+	at TempTestSuite1556823748204.run(TempTestSuite1556823748204.groovy:36)
+
+2019-05-02 19:03:25.259 ERROR c.k.katalon.core.main.TestCaseExecutor   - ❌ Test Cases/LoginTest FAILED.
+Reason:
+com.kms.katalon.core.exception.StepFailedException: Unable to set text 'wilbert.joosen@saude.gov.br' of object 'Object Repository/Page_Hemovida/input__email' (Root cause: com.kms.katalon.core.webui.exception.WebElementNotFoundException: Web element with id: 'Object Repository/Page_Hemovida/input__email' located by 'By.xpath: //input[@type = 'text' and @id = 'email' and @name = 'email']' not found)
+	at com.kms.katalon.core.keyword.internal.KeywordMain.stepFailed(KeywordMain.groovy:36)
+	at com.kms.katalon.core.webui.keyword.internal.WebUIKeywordMain.stepFailed(WebUIKeywordMain.groovy:65)
+	at com.kms.katalon.core.webui.keyword.internal.WebUIKeywordMain.runKeyword(WebUIKeywordMain.groovy:27)
+	at com.kms.katalon.core.webui.keyword.builtin.SetTextKeyword.setText(SetTextKeyword.groovy:65)
+	at com.kms.katalon.core.webui.keyword.builtin.SetTextKeyword.execute(SetTextKeyword.groovy:37)
+	at com.kms.katalon.core.keyword.internal.KeywordExecutor.executeKeywordForPlatform(KeywordExecutor.groovy:53)
+	at com.kms.katalon.core.webui.keyword.WebUiBuiltInKeywords.setText(WebUiBuiltInKeywords.groovy:950)
+	at com.kms.katalon.core.webui.keyword.WebUiBuiltInKeywords$setText$1.call(Unknown Source)
+	at LoginTest.run(LoginTest:23)
+	at com.kms.katalon.core.main.ScriptEngine.run(ScriptEngine.java:194)
+	at com.kms.katalon.core.main.ScriptEngine.runScriptAsRawText(ScriptEngine.java:119)
+	at com.kms.katalon.core.main.TestCaseExecutor.runScript(TestCaseExecutor.java:328)
+	at com.kms.katalon.core.main.TestCaseExecutor.doExecute(TestCaseExecutor.java:319)
+	at com.kms.katalon.core.main.TestCaseExecutor.processExecutionPhase(TestCaseExecutor.java:298)
+	at com.kms.katalon.core.main.TestCaseExecutor.accessMainPhase(TestCaseExecutor.java:290)
+	at com.kms.katalon.core.main.TestCaseExecutor.execute(TestCaseExecutor.java:224)
+	at com.kms.katalon.core.main.TestSuiteExecutor.accessTestCaseMainPhase(TestSuiteExecutor.java:129)
+	at com.kms.katalon.core.main.TestSuiteExecutor.accessTestSuiteMainPhase(TestSuiteExecutor.java:112)
+	at com.kms.katalon.core.main.TestSuiteExecutor.execute(TestSuiteExecutor.java:81)
+	at com.kms.katalon.core.main.TestCaseMain.startTestSuite(TestCaseMain.java:149)
+	at com.kms.katalon.core.main.TestCaseMain$startTestSuite$0.call(Unknown Source)
+	at TempTestSuite1556823748204.run(TempTestSuite1556823748204.groovy:36)
+
+2019-05-02 19:03:25.267 INFO  c.k.katalon.core.main.TestCaseExecutor   - END Test Cases/LoginTest
+2019-05-02 19:03:25.493 INFO  c.k.katalon.core.main.TestSuiteExecutor  - --------------------
+2019-05-02 19:03:25.493 INFO  c.k.katalon.core.main.TestSuiteExecutor  - END Test Suites/Hemovida
+2019-05-02 19:03:25.493 INFO  c.k.katalon.core.main.TestSuiteExecutor  - ====================
+Copying report to folder /var/jenkins_home/workspace/Automacao/Reports...
+
+--------------------------------------------------------------------------------
+Test Suites/Hemovida - Chrome - 20190502_190228........................1/1(100%)
+--------------------------------------------------------------------------------
+
+May 02, 2019 7:02:33 PM org.openqa.selenium.remote.DesiredCapabilities chrome
+INFO: Using `new ChromeOptions()` is preferred to `DesiredCapabilities.chrome()`
+Starting ChromeDriver 2.43.600233 (523efee95e3d68b8719b3a1c83051aa63aa6b10d) on port 20400
+Only local connections are allowed.
+[1556823754.296][SEVERE]: bind() returned an error, errno=0: Cannot assign requested address (99)
+May 02, 2019 7:02:51 PM org.openqa.selenium.remote.ProtocolHandshake createSession
+INFO: Detected dialect: OSS
+Build step 'Execute Katalon Studio Tests' marked build as failure
+Xvfb stopping
+Recording test results
+Finished: FAILURE

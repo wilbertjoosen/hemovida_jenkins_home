@@ -26,7 +26,7 @@
         </hudson.model.ChoiceParameterDefinition>
         <com.syhuang.hudson.plugins.listgitbranchesparameter.ListGitBranchesParameterDefinition plugin="list-git-branches-parameter@0.0.7">
           <name>BRANCH</name>
-          <uuid>5ac1b924-a5ac-46b1-b99c-ddf97852927f</uuid>
+          <uuid>2e626eee-524d-4d56-a580-c52e5d53e1f0</uuid>
           <remoteURL>https://gitlab.cast.com.br/datasus/hemovida/hemovida-web.git</remoteURL>
           <credentialsId>1bf809e4-0054-4d97-8a33-f8bdcd5cab43</credentialsId>
           <defaultValue>origin/master</defaultValue>
@@ -67,7 +67,7 @@
   <concurrentBuild>false</concurrentBuild>
   <builders>
     <hudson.tasks.Shell>
-      <command>echo ${BRANCH} | sed -e &apos;s/origin\///g;s/[_/.]/-/g&apos;</command>
+      <command>echo &quot;Teste do ambiente&quot; ${BRANCH} | sed -e &apos;s/origin\///g;s/[_/.]/-/g&apos;</command>
     </hudson.tasks.Shell>
     <com.katalon.jenkins.plugin.ExecuteKatalonStudioTask plugin="katalon@1.0.8">
       <version>5.10.1</version>
