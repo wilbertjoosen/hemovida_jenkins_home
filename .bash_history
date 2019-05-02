@@ -91,3 +91,4 @@ ls -la
 mv .gitconfig1 .gitconfig
 cd workspace/Teste_Automatizado
 ls -la
+ping firefox

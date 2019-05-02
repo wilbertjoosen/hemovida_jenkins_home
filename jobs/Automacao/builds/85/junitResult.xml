@@ -1,0 +1,50 @@
+<?xml version='1.1' encoding='UTF-8'?>
+<result plugin="junit@1.27">
+  <suites>
+    <suite>
+      <file>/var/jenkins_home/workspace/Automacao/Reports/JUnit_Report.xml</file>
+      <name>Hemovida</name>
+      <stdout>2019-05-02 13:42:45 - [TEST_SUITE][PASSED] - Hemovida: Test Cases/LoginTest</stdout>
+      <stderr></stderr>
+      <duration>16.0</duration>
+      <timestamp>2019-05-02 13:42:45</timestamp>
+      <id>Test Suites/Hemovida</id>
+      <time>16</time>
+      <enclosingBlocks/>
+      <enclosingBlockNames/>
+      <cases>
+        <case>
+          <duration>0.0</duration>
+          <className>Test Cases/LoginTest</className>
+          <testName>Test Cases/LoginTest</testName>
+          <skipped>false</skipped>
+          <stdout>2019-05-02 13:42:45 - [TEST_CASE][PASSED] - Test Cases/LoginTest: Test Cases/LoginTest
+
+2019-05-02 13:42:46 - [TEST_STEP][PASSED] - openBrowser(&quot;&quot;): Browser is opened with url: &apos;&apos;
+
+2019-05-02 13:42:46 - [MESSAGE][INFO] - Starting &apos;Chrome&apos; driver
+
+2019-05-02 13:42:46 - [MESSAGE][INFO] - Action delay is set to 0 seconds
+
+2019-05-02 13:42:53 - [MESSAGE][PASSED] - Browser is opened with url: &apos;&apos;
+
+2019-05-02 13:42:53 - [TEST_STEP][PASSED] - navigateToUrl(&quot;http://&quot; + branch + &quot;.hemovida.cast.com.br/&quot;):
+...[truncated 1582 chars]...
+age_Hemovida/select_- Selecione -2795957 -&apos;  using regular expression
+
+2019-05-02 13:42:58 - [TEST_STEP][PASSED] - click(findTestObject(&quot;Page_Hemovida/input__btnSalvar&quot;)): Object: &apos;Object Repository/Page_Hemovida/input__btnSalvar&apos; is clicked on
+
+2019-05-02 13:43:01 - [MESSAGE][PASSED] - Object: &apos;Object Repository/Page_Hemovida/input__btnSalvar&apos; is clicked on
+
+2019-05-02 13:43:01 - [TEST_STEP][PASSED] - closeBrowser(): Browser is closed
+
+2019-05-02 13:43:01 - [MESSAGE][PASSED] - Browser is closed</stdout>
+          <stderr></stderr>
+          <failedSince>0</failedSince>
+        </case>
+      </cases>
+    </suite>
+  </suites>
+  <duration>16.0</duration>
+  <keepLongStdio>false</keepLongStdio>
+</result>

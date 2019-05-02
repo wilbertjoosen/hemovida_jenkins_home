@@ -1,0 +1,69 @@
+Started by user [8mha:////4FN88H8RrhTBzIF+lJAjMLBc7u8Svt/xokmPCiLj+FzmAAAAlx+LCAAAAAAAAP9b85aBtbiIQTGjNKU4P08vOT+vOD8nVc83PyU1x6OyILUoJzMv2y+/JJUBAhiZGBgqihhk0NSjKDWzXb3RdlLBUSYGJk8GtpzUvPSSDB8G5tKinBIGIZ+sxLJE/ZzEvHT94JKizLx0a6BxUmjGOUNodHsLgAzWEgZu/dLi1CL9xJTczDwAj6GcLcAAAAA=[0madmin
+Running as SYSTEM
+Building in workspace /var/jenkins_home/workspace/Automacao
+[WS-CLEANUP] Deleting project workspace...
+[WS-CLEANUP] Deferred wipeout is used...
+[WS-CLEANUP] Done
+using credential 1bf809e4-0054-4d97-8a33-f8bdcd5cab43
+Cloning the remote Git repository
+Cloning repository https://gitlab.cast.com.br/datasus/hemovida/hemovida-web-testes
+ > git init /var/jenkins_home/workspace/Automacao # timeout=10
+Fetching upstream changes from https://gitlab.cast.com.br/datasus/hemovida/hemovida-web-testes
+ > git --version # timeout=10
+using GIT_ASKPASS to set credentials 
+ > git fetch --tags --progress https://gitlab.cast.com.br/datasus/hemovida/hemovida-web-testes +refs/heads/*:refs/remotes/origin/*
+ > git config remote.origin.url https://gitlab.cast.com.br/datasus/hemovida/hemovida-web-testes # timeout=10
+ > git config --add remote.origin.fetch +refs/heads/*:refs/remotes/origin/* # timeout=10
+ > git config remote.origin.url https://gitlab.cast.com.br/datasus/hemovida/hemovida-web-testes # timeout=10
+Fetching upstream changes from https://gitlab.cast.com.br/datasus/hemovida/hemovida-web-testes
+using GIT_ASKPASS to set credentials 
+ > git fetch --tags --progress https://gitlab.cast.com.br/datasus/hemovida/hemovida-web-testes +refs/heads/*:refs/remotes/origin/*
+ > git rev-parse refs/remotes/origin/master^{commit} # timeout=10
+ > git rev-parse refs/remotes/origin/origin/master^{commit} # timeout=10
+Checking out Revision 689493c81d9556dfc7c1cf7ddd26d9d1f0788e68 (refs/remotes/origin/master)
+ > git config core.sparsecheckout # timeout=10
+ > git checkout -f 689493c81d9556dfc7c1cf7ddd26d9d1f0788e68
+Commit message: "no message"
+ > git rev-list --no-walk 689493c81d9556dfc7c1cf7ddd26d9d1f0788e68 # timeout=10
+[Automacao] $ /bin/sh -xe /tmp/jenkins3025436063529262001.sh
++ cd /katalon
++ ./katalon --args -runMode=console -noSplash -projectPath=/var/jenkins_home/workspace/Automacao/Hemovida.prj -retry=0 -testSuitePath=Test Suites/Hemovida -browserType=Chrome -reportFolder=/var/jenkins_home/workspace/Automacao/Reports -reportFileName=report -executionProfile=default -G_branch=master
+Opening project file: /var/jenkins_home/workspace/Automacao/Hemovida.prj
+Request sent successfully.
+Starting Groovy-Eclipse compiler resolver.  Specified compiler level: unspecified
+161 2.4.7.xx-201611170128-e46 = ACTIVE
+Parsing custom keywords...
+Generating global variables...
+Project 'Hemovida' opened
+
+--------------------------------------------------------------------------------
+Test Suites/Hemovida - Chrome - 20190327_224811..........................0/1(0%)
+--------------------------------------------------------------------------------
+
+Request sent successfully.
+
+--------------------------------------------------------------------------------
+Test Suites/Hemovida - Chrome - 20190327_224811..........................0/1(0%)
+--------------------------------------------------------------------------------
+
+03-27-2019 10:48:38 PM - [START]  - Start Test Suite : Test Suites/Hemovida
+03-27-2019 10:48:41 PM - [START]  - Start Test Case : Test Cases/LoginTest
+03-27-2019 10:48:41 PM - [INFO]   - Evaluating variables for test case
+03-27-2019 10:48:43 PM - [START]  - Start action : openBrowser
+
+--------------------------------------------------------------------------------
+Test Suites/Hemovida - Chrome - 20190327_224811..........................0/1(0%)
+--------------------------------------------------------------------------------
+
+03-27-2019 10:48:48 PM - [END]    - End action : openBrowser
+03-27-2019 10:48:48 PM - [END]    - End Test Case : Test Cases/LoginTest
+03-27-2019 10:48:49 PM - [END]    - End Test Suite : Test Suites/Hemovida
+Copying report to folder /var/jenkins_home/workspace/Automacao/Reports...
+
+--------------------------------------------------------------------------------
+Test Suites/Hemovida - Chrome - 20190327_224811........................1/1(100%)
+--------------------------------------------------------------------------------
+
+Build step 'Execute shell' marked build as failure
+Recording test results
+Finished: FAILURE

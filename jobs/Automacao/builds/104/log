@@ -1,0 +1,74 @@
+Started by user [8mha:////4FN88H8RrhTBzIF+lJAjMLBc7u8Svt/xokmPCiLj+FzmAAAAlx+LCAAAAAAAAP9b85aBtbiIQTGjNKU4P08vOT+vOD8nVc83PyU1x6OyILUoJzMv2y+/JJUBAhiZGBgqihhk0NSjKDWzXb3RdlLBUSYGJk8GtpzUvPSSDB8G5tKinBIGIZ+sxLJE/ZzEvHT94JKizLx0a6BxUmjGOUNodHsLgAzWEgZu/dLi1CL9xJTczDwAj6GcLcAAAAA=[0madmin
+Running as SYSTEM
+Building in workspace /var/jenkins_home/workspace/Automacao
+[WS-CLEANUP] Deleting project workspace...
+[WS-CLEANUP] Deferred wipeout is used...
+[WS-CLEANUP] Done
+using credential 1bf809e4-0054-4d97-8a33-f8bdcd5cab43
+Cloning the remote Git repository
+Cloning repository https://gitlab.cast.com.br/datasus/hemovida/hemovida-web-testes
+ > git init /var/jenkins_home/workspace/Automacao # timeout=10
+Fetching upstream changes from https://gitlab.cast.com.br/datasus/hemovida/hemovida-web-testes
+ > git --version # timeout=10
+using GIT_ASKPASS to set credentials 
+ > git fetch --tags --progress https://gitlab.cast.com.br/datasus/hemovida/hemovida-web-testes +refs/heads/*:refs/remotes/TESTE/*
+ > git config remote.TESTE.url https://gitlab.cast.com.br/datasus/hemovida/hemovida-web-testes # timeout=10
+ > git config --add remote.TESTE.fetch +refs/heads/*:refs/remotes/TESTE/* # timeout=10
+ > git config remote.TESTE.url https://gitlab.cast.com.br/datasus/hemovida/hemovida-web-testes # timeout=10
+Fetching upstream changes from https://gitlab.cast.com.br/datasus/hemovida/hemovida-web-testes
+using GIT_ASKPASS to set credentials 
+ > git fetch --tags --progress https://gitlab.cast.com.br/datasus/hemovida/hemovida-web-testes +refs/heads/*:refs/remotes/TESTE/*
+ > git rev-parse refs/remotes/TESTE/master^{commit} # timeout=10
+ > git rev-parse refs/remotes/TESTE/TESTE/master^{commit} # timeout=10
+Checking out Revision 2fd64091c6c00d400f12d689c39511f3d60d2670 (refs/remotes/TESTE/master)
+ > git config core.sparsecheckout # timeout=10
+ > git checkout -f 2fd64091c6c00d400f12d689c39511f3d60d2670
+Commit message: ""
+ > git rev-list --no-walk 2fd64091c6c00d400f12d689c39511f3d60d2670 # timeout=10
+Xvfb starting$ /usr/bin/Xvfb :0 -fbdir /var/jenkins_home/xvfb-104-..fbdir8795238425379536720
+[Automacao] $ /bin/sh -xe /tmp/jenkins5905725260330435642.sh
++ def BRANCH_UPDATE = origin/release/2.11.0-rc-3
+/tmp/jenkins5905725260330435642.sh: 2: /tmp/jenkins5905725260330435642.sh: def: not found
++ sed -e s/origin\///g;s/[_/.]/-/g
+Katalon Studio package has been downloaded already.
+Using Katalon Studio at /var/jenkins_home/.katalon/5.10.1/Katalon_Studio_Linux_64-5.10.1
+Execute [sh, -c, /var/jenkins_home/.katalon/5.10.1/Katalon_Studio_Linux_64-5.10.1/katalon -noSplash  -runMode=console   -noSplash -projectPath="$WORKSPACE/$TEST_SUITES.prj" -retry=0 -testSuitePath="Test Suites/$TEST_SUITES" -browserType="Chrome" -reportFolder="$WORKSPACE/Reports" -reportFileName="report" -executionProfile="${PROFILE}" -g_branch=${BRANCH_UPDATE} ] in /tmp/katalon-5239208734986587427
+Delete folder: bin
+Delete folder: Libs
+Opening project file: /var/jenkins_home/workspace/Automacao/Hemovida.prj
+[EL Warning]: 2019-05-02 18:36:35.185--Ignoring attribute [lastRun] on class [TestSuiteEntity] as no Property was generated for it.
+Request sent successfully.
+Starting Groovy-Eclipse compiler resolver.  Specified compiler level: unspecified
+166 2.4.7.xx-201611170128-e46 = ACTIVE
+Parsing custom keywords...
+Generating global variables...
+Project 'Hemovida' opened
+joptsimple.OptionMissingRequiredArgumentException: Option g_branch requires an argument
+	at joptsimple.RequiredArgumentOptionSpec.detectOptionArgument(RequiredArgumentOptionSpec.java:48)
+	at joptsimple.ArgumentAcceptingOptionSpec.handleOption(ArgumentAcceptingOptionSpec.java:257)
+	at joptsimple.OptionParser.handleShortOptionToken(OptionParser.java:520)
+	at joptsimple.OptionParserState$2.handleArgument(OptionParserState.java:59)
+	at joptsimple.OptionParser.parse(OptionParser.java:396)
+	at com.kms.katalon.execution.console.ConsoleMain.launch(ConsoleMain.java:100)
+	at com.kms.katalon.console.application.Application.runConsole(Application.java:76)
+	at com.kms.katalon.core.application.Application.runConsole(Application.java:76)
+	at com.kms.katalon.core.application.Application.start(Application.java:59)
+	at org.eclipse.equinox.internal.app.EclipseAppHandle.run(EclipseAppHandle.java:196)
+	at org.eclipse.core.runtime.internal.adaptor.EclipseAppLauncher.runApplication(EclipseAppLauncher.java:134)
+	at org.eclipse.core.runtime.internal.adaptor.EclipseAppLauncher.start(EclipseAppLauncher.java:104)
+	at org.eclipse.core.runtime.adaptor.EclipseStarter.run(EclipseStarter.java:388)
+	at org.eclipse.core.runtime.adaptor.EclipseStarter.run(EclipseStarter.java:243)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.eclipse.equinox.launcher.Main.invokeFramework(Main.java:673)
+	at org.eclipse.equinox.launcher.Main.basicRun(Main.java:610)
+	at org.eclipse.equinox.launcher.Main.run(Main.java:1519)
+	at org.eclipse.equinox.launcher.Main.main(Main.java:1492)
+
+Build step 'Execute Katalon Studio Tests' marked build as failure
+Xvfb stopping
+Recording test results
+ERROR: Step ‘Publish JUnit test result report’ failed: No test report files were found. Configuration error?
+Finished: FAILURE

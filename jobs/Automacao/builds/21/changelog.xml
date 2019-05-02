@@ -1,0 +1,12 @@
+commit 90abf200b788c868c3ed74be660a3437228744cf
+tree 37426752219c2f65b318a42014f192885a4d7701
+parent 8d10eb86a5dbf355b489e82a8425505d921e98fb
+author Wilbert de Almeida Joosen <wilbert.joosen@castgroup.com.br> 2019-03-22 11:05:35 -0300
+committer Wilbert de Almeida Joosen <wilbert.joosen@castgroup.com.br> 2019-03-22 11:05:35 -0300
+
+    [UPDATE] Adicionada lib do webdriver
+
+
+
+:000000 100644 0000000000000000000000000000000000000000 8410e9565a09a849e545d1642c650e190e5a86ce A	Drivers/selenium-server-standalone-3.141.59.jar
+:100644 100644 1329b6856d88403cb3cdf10cd07ffb40a1ba555e b8ef442b401cd1c24e327c6300d24f4cf57a4d6e M	Scripts/LoginTest/Script1553214235534.groovy

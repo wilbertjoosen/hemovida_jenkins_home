@@ -4,7 +4,7 @@
   <server>http://localhost:4444</server>
   <sauceLabs>false</sauceLabs>
   <sauceLabsName></sauceLabsName>
-  <sauceLabsPwd>{AQAAABAAAAAQ8oKwEAANtd8cT2jUDrdNl6234crpIj0Dcr7Y58gNWh8=}</sauceLabsPwd>
+  <sauceLabsPwd>{AQAAABAAAAAQQHYOIXmHEyJzGH1xRKHQD7rGaMTs0jxqk9mx4vUfgpY=}</sauceLabsPwd>
   <sauceLabsAPIURL>http://saucelabs.com/rest/v1/info/platforms/webdriver</sauceLabsAPIURL>
   <sauceLabsURL>http://ondemand.saucelabs.com:80</sauceLabsURL>
 </org.jenkinsci.plugins.SeleniumAxis_-DescriptorImpl>

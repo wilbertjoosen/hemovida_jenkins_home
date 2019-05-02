@@ -1,0 +1,14 @@
+commit 4e302a7f3fe3434294172df31971147b109d555b
+tree fcc88190072ad94f3e63b6310a9b4d68bfc5fce4
+parent 689493c81d9556dfc7c1cf7ddd26d9d1f0788e68
+author Wilbert de Almeida Joosen <wilbert.joosen@castgroup.com.br> 2019-03-27 19:52:18 -0300
+committer Wilbert de Almeida Joosen <wilbert.joosen@castgroup.com.br> 2019-03-27 19:52:18 -0300
+
+    no message
+
+
+
+:100644 100644 4fb2ce716c18a58fc8bec4099afa5c3a8cbcd36e 72c513c4b5eebb2f3134ff5f6205feac2486c90d M	Libs/internal/GlobalVariable.groovy
+:100644 100644 e46ccfdc53f06f8912987d6f02fffc65e68bf9fc ea514835d8e48c5f45ee620602b432ace9bc10d3 M	Profiles/default.glbl
+:100644 100644 ecec7fba5531f60ed712e068097509a37311bf3e 9c9723dbe4a68d32473567a110df9b4a1c37f63a M	Scripts/LoginTest/Script1553214235534.groovy
+:100644 100644 af8c173449248f6821dc97b48dd525c52872c933 426bba36aee3743ea529893ee277a77c43eae4a3 M	bin/lib/internal/GlobalVariable.class

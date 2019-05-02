@@ -1,0 +1,140 @@
+Started by user [8mha:////4FN88H8RrhTBzIF+lJAjMLBc7u8Svt/xokmPCiLj+FzmAAAAlx+LCAAAAAAAAP9b85aBtbiIQTGjNKU4P08vOT+vOD8nVc83PyU1x6OyILUoJzMv2y+/JJUBAhiZGBgqihhk0NSjKDWzXb3RdlLBUSYGJk8GtpzUvPSSDB8G5tKinBIGIZ+sxLJE/ZzEvHT94JKizLx0a6BxUmjGOUNodHsLgAzWEgZu/dLi1CL9xJTczDwAj6GcLcAAAAA=[0madmin
+Running as SYSTEM
+Building in workspace /var/jenkins_home/workspace/Automacao
+[WS-CLEANUP] Deleting project workspace...
+[WS-CLEANUP] Deferred wipeout is used...
+[WS-CLEANUP] Done
+using credential 1bf809e4-0054-4d97-8a33-f8bdcd5cab43
+Cloning the remote Git repository
+Cloning repository https://gitlab.cast.com.br/datasus/hemovida/hemovida-web-testes
+ > git init /var/jenkins_home/workspace/Automacao # timeout=10
+Fetching upstream changes from https://gitlab.cast.com.br/datasus/hemovida/hemovida-web-testes
+ > git --version # timeout=10
+using GIT_ASKPASS to set credentials 
+ > git fetch --tags --progress https://gitlab.cast.com.br/datasus/hemovida/hemovida-web-testes +refs/heads/*:refs/remotes/origin/*
+ > git config remote.origin.url https://gitlab.cast.com.br/datasus/hemovida/hemovida-web-testes # timeout=10
+ > git config --add remote.origin.fetch +refs/heads/*:refs/remotes/origin/* # timeout=10
+ > git config remote.origin.url https://gitlab.cast.com.br/datasus/hemovida/hemovida-web-testes # timeout=10
+Fetching upstream changes from https://gitlab.cast.com.br/datasus/hemovida/hemovida-web-testes
+using GIT_ASKPASS to set credentials 
+ > git fetch --tags --progress https://gitlab.cast.com.br/datasus/hemovida/hemovida-web-testes +refs/heads/*:refs/remotes/origin/*
+ > git rev-parse refs/remotes/origin/master^{commit} # timeout=10
+ > git rev-parse refs/remotes/origin/origin/master^{commit} # timeout=10
+Checking out Revision 4e302a7f3fe3434294172df31971147b109d555b (refs/remotes/origin/master)
+ > git config core.sparsecheckout # timeout=10
+ > git checkout -f 4e302a7f3fe3434294172df31971147b109d555b
+Commit message: "no message"
+ > git rev-list --no-walk 4e302a7f3fe3434294172df31971147b109d555b # timeout=10
+[Automacao] $ /bin/sh -xe /tmp/jenkins4692309677827788790.sh
++ cd /katalon
++ ./katalon -Djava.awt.headless=true --args -runMode=console -noSplash -projectPath=/var/jenkins_home/workspace/Automacao/Hemovida.prj -retry=0 -testSuitePath=Test Suites/Hemovida -browserType=Chrome -reportFolder=/var/jenkins_home/workspace/Automacao/Reports -reportFileName=report -executionProfile=default -G_branch=master
+Delete folder: bin
+Delete folder: Libs
+Opening project file: /var/jenkins_home/workspace/Automacao/Hemovida.prj
+Request sent successfully.
+[EL Warning]: 2019-03-27 23:40:21.103--Ignoring attribute [lastRun] on class [TestSuiteEntity] as no Property was generated for it.
+Starting Groovy-Eclipse compiler resolver.  Specified compiler level: unspecified
+166 2.4.7.xx-201611170128-e46 = ACTIVE
+Parsing custom keywords...
+Generating global variables...
+Project 'Hemovida' opened
+
+--------------------------------------------------------------------------------
+Test Suites/Hemovida - Chrome - 20190327_234055..........................0/1(0%)
+--------------------------------------------------------------------------------
+
+Request sent successfully.
+
+--------------------------------------------------------------------------------
+Test Suites/Hemovida - Chrome - 20190327_234055..........................0/1(0%)
+--------------------------------------------------------------------------------
+
+
+--------------------------------------------------------------------------------
+Test Suites/Hemovida - Chrome - 20190327_234055..........................0/1(0%)
+--------------------------------------------------------------------------------
+
+2019-03-27 23:41:35.104 INFO  c.k.katalon.core.main.TestSuiteExecutor  - START Test Suites/Hemovida
+2019-03-27 23:41:35.449 INFO  c.k.katalon.core.main.TestSuiteExecutor  - hostName = root - cd5452c25191
+2019-03-27 23:41:35.452 INFO  c.k.katalon.core.main.TestSuiteExecutor  - os = Linux 64bit
+2019-03-27 23:41:35.454 INFO  c.k.katalon.core.main.TestSuiteExecutor  - hostAddress = 172.21.0.2
+2019-03-27 23:41:35.483 INFO  c.k.katalon.core.main.TestSuiteExecutor  - katalonVersion = 5.10.0.1
+2019-03-27 23:41:36.990 INFO  c.k.katalon.core.main.TestCaseExecutor   - --------------------
+2019-03-27 23:41:36.990 INFO  c.k.katalon.core.main.TestCaseExecutor   - START Test Cases/LoginTest
+2019-03-27 23:41:38.871 DEBUG testcase.LoginTest                       - 1: openBrowser("")
+2019-03-27 23:41:44.843 ERROR c.k.katalon.core.main.TestCaseExecutor   - ❌ openBrowser("") FAILED.
+Reason:
+java.awt.AWTError: Can't connect to X11 window server using ':0.0' as the value of the DISPLAY variable.
+	at org.sikuli.api.robot.desktop.AWTDesktop.<clinit>(AWTDesktop.java:26)
+	at org.sikuli.api.robot.desktop.DesktopScreen.getSize(DesktopScreen.java:43)
+	at org.sikuli.api.AbstractScreenRegion.<init>(AbstractScreenRegion.java:19)
+	at org.sikuli.api.DefaultScreenRegion.<init>(DefaultScreenRegion.java:37)
+	at org.sikuli.api.DesktopScreenRegion.<init>(DesktopScreenRegion.java:11)
+	at com.kms.katalon.core.webui.common.ScreenUtil.<init>(ScreenUtil.java:26)
+	at com.kms.katalon.core.webui.keyword.internal.WebUIAbstractKeyword.<clinit>(WebUIAbstractKeyword.groovy:20)
+	at com.kms.katalon.core.keyword.internal.KeywordExecutor.getActions(KeywordExecutor.groovy:130)
+	at com.kms.katalon.core.keyword.internal.KeywordExecutor.executeKeywordForPlatform(KeywordExecutor.groovy:49)
+	at com.kms.katalon.core.webui.keyword.WebUiBuiltInKeywords.openBrowser(WebUiBuiltInKeywords.groovy:60)
+	at com.kms.katalon.core.webui.keyword.WebUiBuiltInKeywords$openBrowser.call(Unknown Source)
+	at LoginTest.run(LoginTest:19)
+	at com.kms.katalon.core.main.ScriptEngine.run(ScriptEngine.java:194)
+	at com.kms.katalon.core.main.ScriptEngine.runScriptAsRawText(ScriptEngine.java:119)
+	at com.kms.katalon.core.main.TestCaseExecutor.runScript(TestCaseExecutor.java:328)
+	at com.kms.katalon.core.main.TestCaseExecutor.doExecute(TestCaseExecutor.java:319)
+	at com.kms.katalon.core.main.TestCaseExecutor.processExecutionPhase(TestCaseExecutor.java:298)
+	at com.kms.katalon.core.main.TestCaseExecutor.accessMainPhase(TestCaseExecutor.java:290)
+	at com.kms.katalon.core.main.TestCaseExecutor.execute(TestCaseExecutor.java:224)
+	at com.kms.katalon.core.main.TestSuiteExecutor.accessTestCaseMainPhase(TestSuiteExecutor.java:129)
+	at com.kms.katalon.core.main.TestSuiteExecutor.accessTestSuiteMainPhase(TestSuiteExecutor.java:112)
+	at com.kms.katalon.core.main.TestSuiteExecutor.execute(TestSuiteExecutor.java:81)
+	at com.kms.katalon.core.main.TestCaseMain.startTestSuite(TestCaseMain.java:149)
+	at com.kms.katalon.core.main.TestCaseMain$startTestSuite$0.call(Unknown Source)
+	at TempTestSuite1553730056738.run(TempTestSuite1553730056738.groovy:36)
+
+2019-03-27 23:41:44.854 ERROR c.k.katalon.core.main.TestCaseExecutor   - ❌ Test Cases/LoginTest FAILED.
+Reason:
+java.awt.AWTError: Can't connect to X11 window server using ':0.0' as the value of the DISPLAY variable.
+	at org.sikuli.api.robot.desktop.AWTDesktop.<clinit>(AWTDesktop.java:26)
+	at org.sikuli.api.robot.desktop.DesktopScreen.getSize(DesktopScreen.java:43)
+	at org.sikuli.api.AbstractScreenRegion.<init>(AbstractScreenRegion.java:19)
+	at org.sikuli.api.DefaultScreenRegion.<init>(DefaultScreenRegion.java:37)
+	at org.sikuli.api.DesktopScreenRegion.<init>(DesktopScreenRegion.java:11)
+	at com.kms.katalon.core.webui.common.ScreenUtil.<init>(ScreenUtil.java:26)
+	at com.kms.katalon.core.webui.keyword.internal.WebUIAbstractKeyword.<clinit>(WebUIAbstractKeyword.groovy:20)
+	at com.kms.katalon.core.keyword.internal.KeywordExecutor.getActions(KeywordExecutor.groovy:130)
+	at com.kms.katalon.core.keyword.internal.KeywordExecutor.executeKeywordForPlatform(KeywordExecutor.groovy:49)
+	at com.kms.katalon.core.webui.keyword.WebUiBuiltInKeywords.openBrowser(WebUiBuiltInKeywords.groovy:60)
+	at com.kms.katalon.core.webui.keyword.WebUiBuiltInKeywords$openBrowser.call(Unknown Source)
+	at LoginTest.run(LoginTest:19)
+	at com.kms.katalon.core.main.ScriptEngine.run(ScriptEngine.java:194)
+	at com.kms.katalon.core.main.ScriptEngine.runScriptAsRawText(ScriptEngine.java:119)
+	at com.kms.katalon.core.main.TestCaseExecutor.runScript(TestCaseExecutor.java:328)
+	at com.kms.katalon.core.main.TestCaseExecutor.doExecute(TestCaseExecutor.java:319)
+	at com.kms.katalon.core.main.TestCaseExecutor.processExecutionPhase(TestCaseExecutor.java:298)
+	at com.kms.katalon.core.main.TestCaseExecutor.accessMainPhase(TestCaseExecutor.java:290)
+	at com.kms.katalon.core.main.TestCaseExecutor.execute(TestCaseExecutor.java:224)
+	at com.kms.katalon.core.main.TestSuiteExecutor.accessTestCaseMainPhase(TestSuiteExecutor.java:129)
+	at com.kms.katalon.core.main.TestSuiteExecutor.accessTestSuiteMainPhase(TestSuiteExecutor.java:112)
+	at com.kms.katalon.core.main.TestSuiteExecutor.execute(TestSuiteExecutor.java:81)
+	at com.kms.katalon.core.main.TestCaseMain.startTestSuite(TestCaseMain.java:149)
+	at com.kms.katalon.core.main.TestCaseMain$startTestSuite$0.call(Unknown Source)
+	at TempTestSuite1553730056738.run(TempTestSuite1553730056738.groovy:36)
+
+2019-03-27 23:41:44.882 INFO  c.k.katalon.core.main.TestCaseExecutor   - END Test Cases/LoginTest
+2019-03-27 23:41:45.265 INFO  c.k.katalon.core.main.TestSuiteExecutor  - --------------------
+2019-03-27 23:41:45.266 INFO  c.k.katalon.core.main.TestSuiteExecutor  - END Test Suites/Hemovida
+2019-03-27 23:41:45.267 INFO  c.k.katalon.core.main.TestSuiteExecutor  - ====================
+Copying report to folder /var/jenkins_home/workspace/Automacao/Reports...
+
+--------------------------------------------------------------------------------
+Test Suites/Hemovida - Chrome - 20190327_234055........................1/1(100%)
+--------------------------------------------------------------------------------
+
+
+--------------------------------------------------------------------------------
+Test Suites/Hemovida - Chrome - 20190327_234055........................1/1(100%)
+--------------------------------------------------------------------------------
+
+Build step 'Execute shell' marked build as failure
+Recording test results
+Finished: FAILURE

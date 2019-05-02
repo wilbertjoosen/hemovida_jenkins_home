@@ -1,0 +1,13 @@
+<?xml version='1.1' encoding='UTF-8'?>
+<fingerprint>
+  <timestamp>2019-04-26 14:28:23.625 UTC</timestamp>
+  <md5sum>fab3b49ca0ab3bdf2524491d2690b834</md5sum>
+  <fileName>Credential id=1bf809e4-0054-4d97-8a33-f8bdcd5cab43 name=wilbert.joosen/******</fileName>
+  <usages>
+    <entry>
+      <string>Automacao</string>
+      <ranges>52-73</ranges>
+    </entry>
+  </usages>
+  <facets/>
+</fingerprint>

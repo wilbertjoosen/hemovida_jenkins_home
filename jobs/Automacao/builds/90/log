@@ -1,0 +1,95 @@
+Started by user [8mha:////4FN88H8RrhTBzIF+lJAjMLBc7u8Svt/xokmPCiLj+FzmAAAAlx+LCAAAAAAAAP9b85aBtbiIQTGjNKU4P08vOT+vOD8nVc83PyU1x6OyILUoJzMv2y+/JJUBAhiZGBgqihhk0NSjKDWzXb3RdlLBUSYGJk8GtpzUvPSSDB8G5tKinBIGIZ+sxLJE/ZzEvHT94JKizLx0a6BxUmjGOUNodHsLgAzWEgZu/dLi1CL9xJTczDwAj6GcLcAAAAA=[0madmin
+Running as SYSTEM
+Building in workspace /var/jenkins_home/workspace/Automacao
+[WS-CLEANUP] Deleting project workspace...
+[WS-CLEANUP] Deferred wipeout is used...
+[WS-CLEANUP] Done
+using credential 1bf809e4-0054-4d97-8a33-f8bdcd5cab43
+Cloning the remote Git repository
+Cloning repository https://gitlab.cast.com.br/datasus/hemovida/hemovida-web-testes
+ > git init /var/jenkins_home/workspace/Automacao # timeout=10
+Fetching upstream changes from https://gitlab.cast.com.br/datasus/hemovida/hemovida-web-testes
+ > git --version # timeout=10
+using GIT_ASKPASS to set credentials 
+ > git fetch --tags --progress https://gitlab.cast.com.br/datasus/hemovida/hemovida-web-testes +refs/heads/*:refs/remotes/TESTE/*
+ > git config remote.TESTE.url https://gitlab.cast.com.br/datasus/hemovida/hemovida-web-testes # timeout=10
+ > git config --add remote.TESTE.fetch +refs/heads/*:refs/remotes/TESTE/* # timeout=10
+ > git config remote.TESTE.url https://gitlab.cast.com.br/datasus/hemovida/hemovida-web-testes # timeout=10
+Fetching upstream changes from https://gitlab.cast.com.br/datasus/hemovida/hemovida-web-testes
+using GIT_ASKPASS to set credentials 
+ > git fetch --tags --progress https://gitlab.cast.com.br/datasus/hemovida/hemovida-web-testes +refs/heads/*:refs/remotes/TESTE/*
+ > git rev-parse refs/remotes/TESTE/master^{commit} # timeout=10
+ > git rev-parse refs/remotes/TESTE/TESTE/master^{commit} # timeout=10
+Checking out Revision 2fd64091c6c00d400f12d689c39511f3d60d2670 (refs/remotes/TESTE/master)
+ > git config core.sparsecheckout # timeout=10
+ > git checkout -f 2fd64091c6c00d400f12d689c39511f3d60d2670
+Commit message: ""
+ > git rev-list --no-walk 2fd64091c6c00d400f12d689c39511f3d60d2670 # timeout=10
+Xvfb starting$ /usr/bin/Xvfb :1 -fbdir /var/jenkins_home/xvfb-90-..fbdir3200326661782196649
+Katalon Studio package has been downloaded already.
+Using Katalon Studio at /var/jenkins_home/.katalon/5.10.1/Katalon_Studio_Linux_64-5.10.1
+Execute [sh, -c, /var/jenkins_home/.katalon/5.10.1/Katalon_Studio_Linux_64-5.10.1/katalon -noSplash  -runMode=console   -noSplash -projectPath="$WORKSPACE/$TEST_SUITES.prj" -retry=0 -testSuitePath="Test Suites/$TEST_SUITES" -browserType="Chrome" -reportFolder="$WORKSPACE/Reports" -reportFileName="report" -executionProfile="${PROFILE}" -g_branch=master ] in /tmp/katalon-3837904135296823827
+Delete folder: bin
+Delete folder: Libs
+Opening project file: /var/jenkins_home/workspace/Automacao/Hemovida.prj
+[EL Warning]: 2019-05-02 17:45:57.632--Ignoring attribute [lastRun] on class [TestSuiteEntity] as no Property was generated for it.
+Request sent successfully.
+Starting Groovy-Eclipse compiler resolver.  Specified compiler level: unspecified
+166 2.4.7.xx-201611170128-e46 = ACTIVE
+Parsing custom keywords...
+Generating global variables...
+Project 'Hemovida' opened
+
+--------------------------------------------------------------------------------
+Test Suites/Hemovida - Chrome - 20190502_174603..........................0/1(0%)
+--------------------------------------------------------------------------------
+
+Request sent successfully.
+2019-05-02 17:46:05.712 INFO  c.k.katalon.core.main.TestSuiteExecutor  - START Test Suites/Hemovida
+2019-05-02 17:46:05.759 INFO  c.k.katalon.core.main.TestSuiteExecutor  - hostName = root - b6d3bcbc89bc
+2019-05-02 17:46:05.760 INFO  c.k.katalon.core.main.TestSuiteExecutor  - os = Linux 64bit
+2019-05-02 17:46:05.761 INFO  c.k.katalon.core.main.TestSuiteExecutor  - hostAddress = 172.19.0.2
+2019-05-02 17:46:05.762 INFO  c.k.katalon.core.main.TestSuiteExecutor  - katalonVersion = 5.10.1.1
+2019-05-02 17:46:05.997 INFO  c.k.katalon.core.main.TestCaseExecutor   - --------------------
+2019-05-02 17:46:05.997 INFO  c.k.katalon.core.main.TestCaseExecutor   - START Test Cases/LoginTest
+2019-05-02 17:46:06.538 DEBUG testcase.LoginTest                       - 1: openBrowser("")
+2019-05-02 17:46:07.199 INFO  c.k.k.core.webui.driver.DriverFactory    - Starting 'Chrome' driver
+2019-05-02 17:46:07.224 INFO  c.k.k.core.webui.driver.DriverFactory    - Action delay is set to 0 seconds
+2019-05-02 17:46:09.739 INFO  c.k.k.core.webui.driver.DriverFactory    - sessionId = 313a81842d1168cfafaff52296743b19
+2019-05-02 17:46:09.751 INFO  c.k.k.core.webui.driver.DriverFactory    - browser = Chrome 74.0.3729.108
+2019-05-02 17:46:09.751 INFO  c.k.k.core.webui.driver.DriverFactory    - platform = Linux
+2019-05-02 17:46:09.752 INFO  c.k.k.core.webui.driver.DriverFactory    - seleniumVersion = 3.141.59
+2019-05-02 17:46:09.761 INFO  c.k.k.core.webui.driver.DriverFactory    - proxyInformation = ProxyInformation{proxyOption=NO_PROXY, proxyServerType=HTTP, password=, proxyServerAddress=, proxyServerPort=0}
+2019-05-02 17:46:09.763 DEBUG testcase.LoginTest                       - 2: navigateToUrl("http://" + branch + ".hemovida.cast.com.br/")
+2019-05-02 17:46:11.033 DEBUG testcase.LoginTest                       - 3: setText(findTestObject("Page_Hemovida/input__email"), "wilbert.joosen@saude.gov.br")
+2019-05-02 17:46:11.255 DEBUG testcase.LoginTest                       - 4: setEncryptedText(findTestObject("Page_Hemovida/input__senha"), "8chwvGYzQjA8veVpvp9zoQ==")
+2019-05-02 17:46:11.365 DEBUG testcase.LoginTest                       - 5: click(findTestObject("Page_Hemovida/input__btnAcessar"))
+2019-05-02 17:46:12.149 DEBUG testcase.LoginTest                       - 6: selectOptionByValue(findTestObject("Page_Hemovida/select_- Selecione -2795957 -"), "2943", true)
+2019-05-02 17:46:12.880 DEBUG testcase.LoginTest                       - 7: click(findTestObject("Page_Hemovida/input__btnSalvar"))
+2019-05-02 17:46:15.015 DEBUG testcase.LoginTest                       - 8: closeBrowser()
+2019-05-02 17:46:15.210 INFO  c.k.katalon.core.main.TestCaseExecutor   - END Test Cases/LoginTest
+2019-05-02 17:46:15.234 INFO  c.k.katalon.core.main.TestSuiteExecutor  - --------------------
+2019-05-02 17:46:15.234 INFO  c.k.katalon.core.main.TestSuiteExecutor  - END Test Suites/Hemovida
+2019-05-02 17:46:15.234 INFO  c.k.katalon.core.main.TestSuiteExecutor  - ====================
+Copying report to folder /var/jenkins_home/workspace/Automacao/Reports...
+
+--------------------------------------------------------------------------------
+Test Suites/Hemovida - Chrome - 20190502_174603........................1/1(100%)
+--------------------------------------------------------------------------------
+
+May 02, 2019 5:46:07 PM org.openqa.selenium.remote.DesiredCapabilities chrome
+INFO: Using `new ChromeOptions()` is preferred to `DesiredCapabilities.chrome()`
+Starting ChromeDriver 2.43.600233 (523efee95e3d68b8719b3a1c83051aa63aa6b10d) on port 17158
+Only local connections are allowed.
+[1556819168.045][SEVERE]: bind() returned an error, errno=0: Cannot assign requested address (99)
+May 02, 2019 5:46:09 PM org.openqa.selenium.remote.ProtocolHandshake createSession
+INFO: Detected dialect: OSS
+[Automacao] $ /bin/sh -xe /tmp/jenkins889837725299661535.sh
++ echo origin/release/2.10.14-rc-1
+origin/release/2.10.14-rc-1
++ echo DEVSTAGINGQAPROD
++ perl -pe s/PROD|ING|(?<!Q)A//g
+DEVSTGQA
+Xvfb stopping
+Recording test results
+Finished: SUCCESS
